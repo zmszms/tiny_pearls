@@ -1,0 +1,39 @@
+1. Ubuntu11.10 supports the Chinese, while you need to set the SecurCRT correctly:
+   ====================================
+   Session|Terminal|Apearance|Character encoding==>UTF-8
+2. vi setting
+   ~/.vimrc not ~/.virc (vi is in fact tiny vim) 
+   --------
+
+
+
+This folder is to share something in the host to the all the guest OS.
+
+In each guest OS, it should have read/write permission.
+(smbclient //pc-20090925IRGL/public_host,
+or use File Browser, File|Connect to server, input the //pc-20090925IRGL and public_host, then user of "zms" and passwd of "w3k5")
+after that it's within
+/home/zms/.gvfs/public_host on pc-20090925irgl
+
+The VMWare use the NAT mode to share the network(there is an dhcp server process running on the host OS)
+
+guest OS can use the host OS's internet connection directly without any extra configuration
+
+host IP: 	192.168.234.1/255.255.255.0
+dhcp server: 	192.168.234.254
+DNS server:	192.168.234.2
+WINS server:	192.168.234.2
+
+
+
+c: \windows\system32\drivers\etc\hosts
+
+
+5201 顺天府学
+5202 桦树湾
+5206 学而思
+5207 巨人
+5216 高思？
+5223 /：
+5211 智康
+263  巨人龙
